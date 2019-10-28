@@ -1,6 +1,3 @@
-<a href="https://toolfree.net/tao-web-3d-carousel-online/">Test 1</a>
-<a href="https://drive.google.com/file/d/XXXXXXXXXXXXXXXXXXXXXX/view">Test 2</a>
-<script>
 // function encode rot13
 function rot13(str) {
   var input     = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
@@ -19,4 +16,3 @@ for (var i = 0; i < getlinkdriver.length; i++) {
     getlinkdriver[i].href = "https://yourwebsite.com/redirect.php?url=" + rot13(getlinkdriver[i].href).replace("://", "ADEDTDHKRBFASDNGFSDHGHAZFKSRXDFDXFFSGDGHAWEHEZSYIIOIQSRTXGHJR");
 }
 }
-</script>
