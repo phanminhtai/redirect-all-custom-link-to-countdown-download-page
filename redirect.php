@@ -17,5 +17,20 @@ else{
     die();
 }
 ?>
-// Echo link
-<a href="<?php echo $url;?>">Get link</a>
+// Auto redirect countdown link
+<h3>
+ Wait <span id="countdown">9</span> s
+</h3>
+<script type="text/javascript">
+    var seconds = 8;
+    function countdown() {
+        seconds = seconds - 1;
+        if (seconds < 0) {
+            window.location = "<?php echo $url;?>";
+        } else {
+            document.getElementById("countdown").innerHTML = seconds;
+            window.setTimeout("countdown()", 1000);
+        }
+    }
+    countdown();
+</script>
